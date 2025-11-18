@@ -64,6 +64,7 @@ export default function WhyChoose() {
         <div className="mb-8 md:mb-12">
           <h2 className="text-2xl md:text-4xl lg:text-[44px] mb-3 md:mb-4 font-extrabold font-['Urbanist'] text-[#221628]">
             Why Residents Choose Sumadhura
+          </h2>
           <p className="text-[#433F3E] font-medium font-['Urbanist'] text-[14px] md:text-base lg:text-lg max-w-2xl">
             A perfect blend of location, lifestyle, and legacy that residents truly love.
           </p>
