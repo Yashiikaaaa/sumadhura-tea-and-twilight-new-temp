@@ -3,7 +3,7 @@ export default function Amenities() {
     { 
       name: "Lush Greenery", 
       icon: (<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M33.4427 44.1224V38.7891H49.4498L40.1123 26.7891H48.1159L33.4427 6.78906L28.1069 12.1224" stroke="#BC9043" strokeWidth="2.9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.4427 44.1224V38.7891H49.4498L40.1123 26.7891H48.1159L33.4427 6.78906L28.1069 12.1224" stroke="#BC9043" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M20.1379 38.7835H38.8259L26.8122 21.4502H34.8213L20.1379 1.4502L5.45457 21.4502H13.4637L1.45001 38.7835H20.1379ZM20.1379 38.7835V49.4502" stroke="#BC9043" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 ),
