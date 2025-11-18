@@ -84,7 +84,7 @@ export default function WhyChoose() {
               <img src={image.src || "/placeholder.svg"} alt={image.title} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className={`text-white font-semibold transition-all duration-500 ${expandedIndex === index ? "text-lg mb-2" : "text-lg"}`}>
+                <h3 className={`text-white font-semibold transition-all duration-200 ${expandedIndex === index ? "text-lg mb-2" : "text-lg"}`}>
                   {image.title}
                 </h3>
               </div>
@@ -107,7 +107,7 @@ export default function WhyChoose() {
               <img src={image.src || "/placeholder.svg"} alt={image.title} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className={`text-white font-semibold transition-all duration-500 ${mobileExpandedIndex === index ? "text-xl" : "text-base"}`}>
+                <h3 className={`text-white font-semibold transition-all duration-200 ${mobileExpandedIndex === index ? "text-xl" : "text-base"}`}>
                   {image.title}
                 </h3>
               </div>
