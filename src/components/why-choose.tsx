@@ -53,7 +53,7 @@ export default function WhyChoose() {
   useEffect(() => {
     const interval = setInterval(() => {
       setExpandedIndex(prev => (prev + 1) % images.length)
-    }, 2000)
+    }, 3000)
     return () => clearInterval(interval)
   }, [images.length])
 
