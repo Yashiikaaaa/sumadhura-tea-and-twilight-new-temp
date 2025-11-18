@@ -23,7 +23,7 @@ export default function Introduction() {
             {/* Top Left Image - Aerial View */}
             <div className="absolute top-0 left-0 w-[80%] h-[80%] z-10">
               <img
-                src="/assets/introduction/image3.jpeg"
+                src="/assets/g1.jpg"
                 alt="Godrej Aerial View"
                 className="w-full h-full object-cover rounded-[4px] shadow-lg hover:scale-105 transition-transform duration-300"
               />
@@ -32,7 +32,7 @@ export default function Introduction() {
             {/* Bottom Right Image - Residential Building */}
             <div className="absolute bottom-0 right-0 w-[55%] h-[50%] z-20">
               <img
-                src="/assets/introduction/image2.png"
+                src="/assets/introduction/overview.png"
                 alt="Godrej Residential Building"
                 className="w-full h-full object-cover rounded-[4px] shadow-xl  hover:scale-105 transition-transform duration-300"
               />
