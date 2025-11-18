@@ -17,42 +17,49 @@ export default function WhyChoose() {
     { title: "Open Spaces", src: "/assets/projecthighlights/openspaces.png" },
   ]
 
-  useEffect(() => {
+ useEffect(() => {
+  function detectClosest() {
     const container = scrollRef.current
     if (!container) return
 
-    function detectClosest() {
-      const children = Array.from(container.children)
-      let closestIndex = 0
-      let closestDistance = Infinity
+    const children = Array.from(container.children)
+    let closestIndex = 0
+    let closestDistance = Infinity
 
-      const center = container.scrollLeft + container.offsetWidth / 2
+    const center = container.scrollLeft + container.offsetWidth / 2
 
-      children.forEach((child, index) => {
-        const el = child as HTMLElement
-        const boxCenter = el.offsetLeft + el.offsetWidth / 2
-        const distance = Math.abs(center - boxCenter)
+    children.forEach((child, index) => {
+      const el = child as HTMLElement
+      const boxCenter = el.offsetLeft + el.offsetWidth / 2
+      const distance = Math.abs(center - boxCenter)
 
-        if (distance < closestDistance) {
-          closestDistance = distance
-          closestIndex = index
-        }
-      })
+      if (distance < closestDistance) {
+        closestDistance = distance
+        closestIndex = index
+      }
+    })
 
-      setMobileExpandedIndex(closestIndex)
-    }
+    setMobileExpandedIndex(closestIndex)
+  }
 
-    function debouncedScroll() {
-      if (scrollTimeout) clearTimeout(scrollTimeout)
-      scrollTimeout = setTimeout(detectClosest, 80)
-    }
+  function debouncedScroll() {
+    const container = scrollRef.current
+    if (!container) return
 
-    container.addEventListener("scroll", debouncedScroll)
+    if (scrollTimeout) clearTimeout(scrollTimeout)
+    scrollTimeout = setTimeout(detectClosest, 80)
+  }
 
-    detectClosest()
+  const container = scrollRef.current
+  if (!container) return
 
-    return () => container.removeEventListener("scroll", debouncedScroll)
-  }, [])
+  container.addEventListener("scroll", debouncedScroll)
+
+  detectClosest()
+
+  return () => container.removeEventListener("scroll", debouncedScroll)
+}, [])
+
 
   return (
     <section className="py-12 md:py-20 bg-white">
