@@ -69,7 +69,7 @@ export default function Footer() {
       </footer>
       <div className="md:hidden w-full flex flex-wrap gap-1 bg-white rounded-t-md pt-6 pr-5 pl-3 pb-5 items-center justify-between bottom-0 sticky z-20">
   <button
-    className="bg-primary text-md text-white px-8 py-3 rounded-[4px] font-semibold transition-colors flex items-center gap-2 shadow-md cursor-pointer min-w-[177px] flex-1 sm:flex-initial sm:w-auto justify-center"
+    className="bg-primary text-sm text-white px-8 py-3 rounded-[4px] font-semibold transition-colors flex items-center gap-2 shadow-md cursor-pointer min-w-[177px] flex-1 sm:flex-initial sm:w-auto justify-center"
     onClick={handleCallClick}
   >
     <svg
@@ -90,7 +90,7 @@ export default function Footer() {
     9353329893
   </button>
   <button
-    className="border text-md border-primary text-primary px-8 py-3 rounded-[4px] font-semibold transition-colors flex items-center gap-2 cursor-pointer min-w-[177px] flex-1 sm:flex-initial sm:w-auto justify-center"
+    className="border text-sm border-primary text-primary px-8 py-3 rounded-[4px] font-semibold transition-colors flex items-center gap-2 cursor-pointer min-w-[177px] flex-1 sm:flex-initial sm:w-auto justify-center"
     onClick={() => {
       window.open("https://wa.me/+919353329893", "_blank");
     }}
