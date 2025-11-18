@@ -8,7 +8,7 @@ export default function Gallery() {
   const images = [
     { src: "/assets/gallery/interior1.png", desktopCols: 1, mobileRows: 1 },
     { src: "/assets/gallery/image4.png", desktopCols: 3, mobileRows: 1 },
-    { src: "/assets/gallery/gallery1.png", desktopCols: 2, mobileRows: 2 },
+    { src: "/assets/gallery/facade.png", desktopCols: 2, mobileRows: 2 },
     { src: "/assets/introduction/overview1.jpg", desktopCols: 3, mobileRows: 2 },
     { src: "/wimming-pool-recreation-area.jpg", desktopCols: 2, mobileRows: 3 },
     { src: "/residential-buildings-complex.jpg", desktopCols: 1, mobileRows: 3 },

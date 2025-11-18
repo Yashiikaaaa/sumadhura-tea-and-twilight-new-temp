@@ -87,7 +87,7 @@ export default function Footer() {
         strokeLinejoin="round"
       />
     </svg>
-    Contact Us
+    9353329893
   </button>
   <button
     className="border text-md border-primary text-primary px-8 py-3 rounded-[4px] font-semibold transition-colors flex items-center gap-2 cursor-pointer min-w-[177px] flex-1 sm:flex-initial sm:w-auto justify-center"

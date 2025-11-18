@@ -172,9 +172,9 @@ export default function EnquiryModal({
           {/* Header */}
           <div className="sticky top-0 bg-[#F9F4ED] px-4 md:px-5 py-5.5 flex items-center justify-between border-b border-gray-200">
             <img
-              src="/logomain.svg"
+              src="/assets/sumadhuralogo.png"
               alt="Godrej Logo"
-              className="h-6 md:h-9 w-auto"
+              className="h-10 md:h-15 w-auto"
             />
             <button
               onClick={onClose}
