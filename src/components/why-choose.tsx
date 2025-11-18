@@ -53,7 +53,7 @@ export default function WhyChoose() {
   useEffect(() => {
     const interval = setInterval(() => {
       setExpandedIndex(prev => (prev + 1) % images.length)
-    }, 5000)
+    }, 2000)
     return () => clearInterval(interval)
   }, [images.length])
 
@@ -75,7 +75,7 @@ export default function WhyChoose() {
           {images.map((image, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden rounded-2xl max-h-[477px] cursor-pointer transition-all duration-300 ease-in-out ${
+              className={`relative overflow-hidden rounded-2xl max-h-[477px] cursor-pointer transition-all duration-700 ease-in-out ${
                 expandedIndex === index ? "flex-3" : "flex-[0.7] hover:flex-[0.8]"
               }`}
               onClick={() => setExpandedIndex(index)}
